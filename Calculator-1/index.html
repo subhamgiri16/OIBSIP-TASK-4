@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <!-- Linking to your custom stylesheet -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Boxicons CDN for icons -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href="https://unpkg.com/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.png" type="image/png">
+
+    <!-- handle large numbers with Math.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.9.0/math.min.js"></script>
+
+</head>
+
+<body>
+    <h2>Calculator</h2>
+    <div class="calculator-container">
+        <div id="display" class="display">0</div>
+        <div class="buttons-container">
+            <!-- Basic Calculator Buttons -->
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="small clear">C</button>
+            <button class="small">-</button>
+
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="small">%</button>
+            <button class="small">+</button>
+
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="small">(</button>
+            <button class="small">)</button>
+
+            <button>0</button>
+            <button class="small">.</button>
+            <button class="small">&#x232B;</button> <!-- Backspace Icon -->
+            <button class="small">*</button>
+            <button class="small">/</button>
+            <button class="equal">=</button>
+            <button class="spacebar"> <nbsp> </button>
+        </div>
+    </div>
+
+    <!-- History Section -->
+    <div id="history-container">
+        <h3>History</h3>
+        <div id="history-display"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
